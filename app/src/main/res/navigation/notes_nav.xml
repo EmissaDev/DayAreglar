@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notes_nav"
+    app:startDestination="@id/NotesList">
+
+    <fragment
+        android:id="@+id/NotesList"
+        android:name="com.emissa.apps.dayareglar.ui.notes.NotesListFragment"
+        android:label="@string/menu_notes"
+        tools:layout="@layout/fragment_notes_list" >
+        <action
+            android:id="@+id/action_NotesList_to_NotesCreate"
+            app:destination="@id/NotesCreate" />
+        <action
+            android:id="@+id/action_NotesList_to_NoteDetails"
+            app:destination="@id/NoteDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/NotesCreate"
+        android:name="com.emissa.apps.dayareglar.ui.notes.CreateNoteFragment"
+        android:label="New Note"
+        tools:layout="@layout/fragment_create_note" />
+    <fragment
+        android:id="@+id/NoteDetails"
+        android:name="com.emissa.apps.dayareglar.ui.notes.NoteDetailsFragment"
+        android:label="Note Details"
+        tools:layout="@layout/fragment_note_details" />
+</navigation>

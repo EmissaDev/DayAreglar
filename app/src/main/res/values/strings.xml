@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DayAreglar</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">Get Well Organized</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_notes">Notes</string>
+    <string name="menu_events">Events</string>
+
+    <string name="add_event_title">Add Event</string>
+    <string name="tv_note_date">Note Date</string>
+    <string name="tv_note_content">Note Content</string>
+    <string name="tv_note_title">Note Title</string>
+</resources>

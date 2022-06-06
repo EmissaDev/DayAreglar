@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DayAreglar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">@color/primaryColor</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.DayAreglar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.DayAreglar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.DayAreglar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.DayAreglar.CalendarView" parent="Theme.DayAreglar">
+        <item name="colorSecondary">@color/red_a100</item>
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">16dp</item>
+        <item name="shapeAppearanceMediumComponent">
+            @style/ShapeAppearance.MaterialComponents.MediumComponent
+        </item>
+        <item name="shapeAppearanceSmallComponent">
+            @style/ShapeAppearance.MaterialComponents.SmallComponent
+        </item>
+    </style>
+
+    <style name="Widget.Events.TextInputLayout"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <item name="boxStrokeErrorColor">@color/red_700</item>
+        <item name="errorIconTint">@color/red_700</item>
+        <item name="errorTextColor">@color/red_700</item>
+        <item name="helperTextTextAppearance">
+            @style/TextAppearance.MaterialComponents.Subtitle1
+        </item>
+    </style>
+
+    <style name="Widget.Events.Button" parent="TextAppearance.AppCompat.Widget.Button">
+        <item name="android:background">@drawable/btn_background</item>
+        <item name="android:textSize">@dimen/text_size_20</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+</resources>

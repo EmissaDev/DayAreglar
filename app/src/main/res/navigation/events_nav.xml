@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/events_nav"
+    app:startDestination="@id/EventsList">
+
+    <fragment
+        android:id="@+id/EventsList"
+        android:name="com.emissa.apps.dayareglar.ui.events.EventsListFragment"
+        android:label="@string/menu_events"
+        tools:layout="@layout/fragment_events_list" >
+        <action
+            android:id="@+id/action_EventsList_to_EventsCreate"
+            app:destination="@id/EventsCreate" />
+        <action
+            android:id="@+id/action_EventsList_to_EventDetails"
+            app:destination="@id/EventDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/EventsCreate"
+        android:name="com.emissa.apps.dayareglar.ui.events.CreateEventFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_create_event">
+
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="event_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_EventsCreate_to_EventsList"
+            app:destination="@id/EventsList"
+            app:popUpTo="@id/EventsList"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/EventDetails"
+        android:name="com.emissa.apps.dayareglar.ui.events.EventDetailsFragment"
+        android:label="Event Details"
+        tools:layout="@layout/fragment_event_details">
+
+        <argument
+            android:name="event_id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_EventDetails_to_EventsList"
+            app:destination="@id/EventsList" />
+    </fragment>
+</navigation>
